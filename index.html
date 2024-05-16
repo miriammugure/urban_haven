@@ -1,60 +1,217 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <header class="header">
-        <!-- logo -->
-        <div class="header-logo-wrapper">
-          <div class="header-logo-text">
-            <h1 class="logo-name">urban haven apartments</h1>
+      <!-- logo -->
+      <div class="header-logo-wrapper">
+        <div class="header-logo-text">
+          <h1 class="logo-name">urban haven apartments</h1>
+        </div>
+      </div>
+      <!-- navlinks -->
+      <div class="header-nav">
+        <ol class="header-nav-list">
+          <li class="header-nav-link"><a href="#HOME">home</a></li>
+          <li class="header-nav-link"><a href="#ABOUT">about us</a></li>
+          <li class="header-nav-link"><a href="#AMENITIES">amenities</a></li>
+          <li class="header-nav-link"><a href="#APARTMENTS">apartments</a></li>
+          <li class="header-nav-link"><a href="#CONTACTS">contacts</a></li>
+        </ol>
+      </div>
+    </header>
+    <!-- homesection -->
+
+    <section class="home">
+      <div class="home-box">
+        <div class="home-text-box">
+          <div class="home-main-box">
+            <h2 class="home-main-text">welcome to:</h2>
+          </div>
+          <div class="home-sub-box">
+            <p class="home-sub-text">urban haven apartments</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Architecto doloremque in maiores, culpa amet asperiores qui at
+              deserunt velit voluptas tenetur iste nesciunt quasi quis?
+            </p>
+          </div>
+          <div class="home-box-cta">
+            <a href="" class="home-cta">inquire further &rarr;</a>
+            <a href="" class="home-cta">book viewing &rarr;</a>
           </div>
         </div>
-        <!-- navlinks -->
-        <div class="header-nav">
-          <ol class="header-nav-list">
-            <li class="header-nav-link"><a href="#HOME">home</a></li>
-            <li class="header-nav-link"><a href="#ABOUT">about us</a></li>
-            <li class="header-nav-link"><a href="#AMENITIES">amenities</a></li>
-            <li class="header-nav-link"><a href="#APARTMENTS">apartments</a></li>
-            <li class="header-nav-link"><a href="#CONTACTS">contacts</a></li>
-          </ol>
-        </div>
-      </header>
-      <!-- homesection -->
-  
-      <section class="home">
-        <div class="home-box">
-          <div class="home-text-box">
-           <div class="home-main-box"><h2 class="home-main-text">welcome to:</h2></div>
-              <div class="home-sub-box">  <p class="home-sub-text">urban haven apartments</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto doloremque in maiores, culpa amet asperiores qui at deserunt velit voluptas tenetur iste nesciunt quasi quis?</p>
-              </div>
-              <div class="home-box-cta">
-                <a href="" class="home-cta">inquire further &rarr;</a>
-                <a href="" class="home-cta">book viewing &rarr;</a>
-              </div>
-             
+      </div>
+    </section>
+
+    <!-- about section -->
+
+    <section class="about">
+      <div class="about-description">
+        <h2 class="about-description-title">about</h2>
+        <p class="about-description-text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt
+          sit, temporibus hic illum possimus magnam dolores corporis voluptatem
+          aspernatur esse!
+        </p>
+      </div>
+      <div class="about-image">
+        <img
+          src="Assets/bedsitter2.webp"
+          alt="about image"
+          class="about-image-image"
+        />
+      </div>
+    </section>
+    <section class="amenities">
+      <h2 class="amenities-title">amenities</h2>
+      <div class="amenities-box">
+        <div class="amenities-card-box">
+          <div class="amenities-description-text">
+            <h2 class="amenities-main-text">wifi</h2>
           </div>
-  
+          <div class="amenities-card-image">
+            <img
+              src="Assets/wifi-signal.png"
+              alt="wifi signal"
+              class="amenities-card-image-image"
+            />
+          </div>
+          <div class="amenities-card-description">
+            <p class="amenities sub text">
+              Free wifi except for those living in single rooms.
+            </p>
+          </div>
         </div>
-      </section>
 
-      <!-- about section -->
+        <div class="amenities-card-box">
+          <div class="amenities-description-text">
+            <h2 class="amenities-main-text">free parking</h2>
+          </div>
+          <div class="amenities-card-image">
+            <img
+              src="Assets/car parking.png"
+              alt="free parking"
+              class="amenities-card-image-image"
+            />
+          </div>
+          <div class="amenities-card-description">
+            <p class="amenities sub text">
+              Free parking except for those living in single rooms and
+              bedsitters.
+            </p>
+          </div>
+        </div>
 
-      <section class="about">
-        <div class="about-description">
-          <p class="about-description-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt sit, temporibus hic illum possimus magnam dolores corporis voluptatem aspernatur esse!</p>
+        <div class="amenities-card-box">
+          <div class="amenities-description-text">
+            <h2 class="amenities-main-text">on site laundry</h2>
+          </div>
+          <div class="amenities-card-image">
+            <img
+              src="Assets/laundry.png"
+              alt="laundry"
+              class="amenities-card-image-image"
+            />
+          </div>
+          <div class="amenities-card-description">
+            <p class="amenities sub text">
+              On-site laundry @ Kshs.150 per basket.
+            </p>
+          </div>
         </div>
-        <div class="about-image">
-          <img src="Assets/bedsitter2.webp" alt="about image" class="about-image-image">
+
+        <div class="amenities-card-box">
+          <div class="amenities-description-text">
+            <h2 class="amenities-main-text">free gym</h2>
+          </div>
+          <div class="amenities-card-image">
+            <img
+              src="Assets/gym.png"
+              alt="free gym "
+              class="amenities-card-image-image"
+            />
+          </div>
+          <div class="amenities-card-description">
+            <p class="amenities sub text">
+              Free gym except for those living in single rooms and bedsitters.
+            </p>
+          </div>
         </div>
-      </section>
-    
-</body>
+
+        <div class="amenities-card-box">
+          <div class="amenities-description-text">
+            <h2 class="amenities-main-text">swimming pool</h2>
+          </div>
+          <div class="amenities-card-image">
+            <img
+              src="Assets/swimmimgpool.webp"
+              alt="swimming pool"
+              class="amenities-card-image-image"
+            />
+          </div>
+          <div class="amenities-card-description">
+            <p class="amenities sub text">Swimming pool - free for everyone.</p>
+          </div>
+        </div>
+
+        <div class="amenities-card-box">
+          <div class="amenities-description-text">
+            <h2 class="amenities-main-text">elevator access</h2>
+          </div>
+          <div class="amenities-card-image">
+            <img
+              src="Assets/elevator access.png"
+              alt="elevator access"
+              class="amenities-card-image-image"
+            />
+          </div>
+          <div class="amenities-card-description">
+            <p class="amenities sub text">
+              Elevator access - elevators for easy access to upper floors.
+            </p>
+          </div>
+        </div>
+
+        <div class="amenities-card-box">
+          <div class="amenities-description-text">
+            <h2 class="amenities-main-text">free water</h2>
+          </div>
+          <div class="amenities-card-image">
+            <img
+              src="Assets/water.png"
+              alt="free water"
+              class="amenities-card-image-image"
+            />
+          </div>
+          <div class="amenities-card-description">
+            <p class="amenities sub text">Free water for everyone.</p>
+          </div>
+        </div>
+
+        <div class="amenities-card-box">
+          <div class="amenities-description-text">
+            <h2 class="amenities-main-text">communication theatre</h2>
+          </div>
+          <div class="amenities-card-image">
+            <img
+              src="Assets/communication theatre.png"
+              alt="communication theatre"
+              class="amenities-card-image-image"
+            />
+          </div>
+          <div class="amenities-card-description">
+            <p class="amenities sub text">
+              Community theatre - free for everyone
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>

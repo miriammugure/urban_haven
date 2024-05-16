@@ -19,8 +19,8 @@ body {
   --primary-color: #9ba8ab;
   --secondary-color: #ccd0cf;
   --background-color: #253745;
-  --text-color:#11212d;
-  --paragrapgh-color:#06141b;
+  --text-color: #11212d;
+  --paragrapgh-color: #06141b;
   --primary-font: "Poppins", Sans-serif;
   --secondary-font: "Dancing Script", cursive;
 }
@@ -35,7 +35,6 @@ body {
 .header-logo-wrapper {
   padding: 1rem 2rem;
   display: flex;
- 
 }
 
 .header-logo-text {
@@ -51,7 +50,6 @@ body {
   text-align: center;
 }
 .header-nav {
-  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,7 +59,6 @@ body {
   gap: 2rem;
   display: flex;
   padding: 1rem;
-
 }
 
 .header-nav-link a {
@@ -77,42 +74,41 @@ body {
 }
 
 /* home styling */
-.home{
+.home {
   background-color: var(--secondary-color);
   height: 100vh;
   padding: 4rem;
-  display:flex;
+  display: flex;
   flex-direction: column;
 }
-.home-box{
- 
- gap: 4rem;
+.home-box {
+  gap: 4rem;
   padding: 4rem 2rem;
   /* border:2px solid red ; */
 }
-.home-main-box{
+.home-main-box {
   font-family: var(--secondary-font);
   color: var(--text-color);
   font-size: 7rem;
   text-transform: capitalize;
   /* border: 2px solid green; */
 }
-.home-sub-box{
+.home-sub-box {
   /* border: 2px solid black; */
- text-align: center;
+  text-align: center;
   font-size: 3rem;
   font-family: var(--primary-font);
   color: var(--text-color);
   text-transform: uppercase;
 }
-.home-box-cta{
+.home-box-cta {
   /* border: 2px solid green; */
   padding: 4rem;
   display: flex;
   justify-content: center;
   gap: 4rem;
 }
-.home-cta{
+.home-cta {
   font-size: 2rem;
   text-decoration: none;
   color: var(--secondary-color);
@@ -120,15 +116,93 @@ body {
   border-radius: 10px;
   background-color: var(--background-color);
 }
-.home-cta:hover{
+.home-cta:hover {
   transform: scale(1.2);
 }
 /* about styling */
-.about{
-  display: flex;
-  gap:2rem;
+.about {
+  padding: 6rem 12rem;
+  display: grid;
+  background-color: var(--background-color);
+  grid-template-columns: auto auto;
+  align-items: center;
+  gap: 3rem;
 }
-
+.about-description {
+  display: flex;
+  gap: 4rem;
+  flex-direction: column;
+  font-family: var(--primary-font);
+  color: var(--secondary-color);
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  padding: 1rem 3rem;
+}
+.about-description-title {
+  font-size: 4rem;
+  padding: 1rem 4rem;
+  /* border: 2px solid green; */
+  color: var(--secondary-color);
+  line-height: 3;
+  text-transform: uppercase;
+}
+.about-image {
+  border-radius: 10px;
+  overflow: hidden;
+  /* border: 2px solid blue; */
+}
+/* .about-image-image{
+  width: 100%;
+} */
+.about-image:hover {
+  transform: scale(1.2);
+}
+/* amenities section */
+.amenities {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color);
+}
+.amenities-title {
+  text-align: center;
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  font-size: 3rem;
+  border: 2px solid red;
+  font-family: var(--primary-font);
+}
+.amenities-box {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding: 4rem;
+}
+.amenities-card-box {
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid green;
+  padding: 1rem;
+  /* background-color: var(--primary-color); */
+}
+.amenities-card-image {
+  width: 7rem;
+  /* border: 2px solid red; */
+}
+.amenities-card-image-image {
+  width: 100%;
+  height: 100%;
+}
+.amenities-description-text {
+  text-transform: uppercase;
+}
+.amenities-card-description {
+  font-size: 2rem;
+}
 /* header responsiveness */
 @media screen and (max-width: 600px) {
   .header-nav-link {
@@ -149,16 +223,38 @@ body {
     text-align: center;
     font-size: 3rem;
   }
- /* homeresponsiveness */
- .home-box{
-  display: flex;
-  flex-direction: column;
-  line-height: 1.5;
+  /* homeresponsiveness */
+  .home-box {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+  }
+  .home-main-box {
+    font-size: 2.5rem;
+  }
+  .home-sub-box {
+    font-size: 2rem;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-image {
+    width: 90vw;
+
+    border: 2px solid green;
+  }
+  .about-image:hover {
+    transform: none;
+  }
 }
- .home-main-box{
-  font-size: 2.5rem;
- }
- .home-sub-box{
-  font-size: 2rem;
- }
+@media screen and (max-width: 900px) and (min-width: 601px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
