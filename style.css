@@ -130,7 +130,7 @@ body {
   align-items: center;
   gap: 3rem;
   z-index: 99;
-  border: 2px solid green;
+  /* border: 2px solid green; */
 }
 .about-description {
   display: flex;
@@ -176,7 +176,7 @@ body {
   color: var(--background-color);
   text-transform: uppercase;
   font-size: 3rem;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   font-family: var(--primary-font);
 }
 .amenities-box {
@@ -194,8 +194,9 @@ body {
   justify-content: center;
   color: var(--paragrapgh-color);
   padding: 1rem;
-  border: 2px solid red;
-  /* background-color: var(--primary-color); */
+}
+.amenities-card-box:hover {
+  border: 2px solid var(--background-color);
 }
 /* .amenities-card-image {
   width: 6rem;
@@ -207,7 +208,7 @@ body {
 }
 .amenities-description-text {
   text-transform: uppercase;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
 }
 .amenities-card-description {
   align-items: center;
@@ -216,7 +217,7 @@ body {
 /* apartment section */
 .apartments {
   min-height: 80vh;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   /* padding: 2rem 2rem; */
 }
 .apartment-box {
@@ -226,7 +227,7 @@ body {
   align-items: center;
   padding: 1rem;
   flex-wrap: wrap;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   background-color: var(--primary-color);
 }
 .apartment-card-box {
@@ -251,6 +252,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 2rem 2rem;
+
   /* border: 2px solid black; */
 }
 .apartment-main-title {
@@ -260,12 +262,16 @@ body {
   font-family: var(--primary-font);
   color: var(--paragrapgh-color);
   font-size: 2rem;
+  border: 2px solid red;
   padding-bottom: 0rem 0rem 2rem 3rem;
 }
 .apartment-sub-text {
-  font-size: 1.5rem;
+  height: 18rem;
+  width: 20rem;
   /* border: 2px solid red; */
-  margin: 2rem 0rem 2rem 0rem;
+  font-size: 1.5rem;
+  /* padding: 2rem; */
+  /* border: 2px solid red; */
   font-family: var(--primary-font);
 }
 .sub-box {
