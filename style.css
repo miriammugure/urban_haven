@@ -279,13 +279,14 @@ body {
 .contacts {
   display: flex;
   justify-content: space-around;
-  height: 70vh;
+  height: 80vh;
   padding: 1rem 2rem 1rem 2rem;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   background-color: var(--primary-color);
 }
 .contact-us {
   border: 2px solid black;
+  box-shadow: 4px 4px 4px 4px var(--secondary-color) inset;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -298,17 +299,17 @@ body {
   width: 40rem;
   display: flex;
   flex-direction: column;
-  border: solid 2px green;
+  /* border: solid 2px green; */
   padding: 2rem;
-  background-color: var(--paragrapgh-color);
+  /* background-color: var(--paragrapgh-color); */
 }
 
 .form-title {
   text-transform: capitalize;
   font-family: var(--primary-font);
-  color: var(--secondary-color);
+  color: var(--paragrapgh-color);
   margin-bottom: 1.5rem;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
 }
 .contact-form input {
   width: 100%;
@@ -345,6 +346,7 @@ body {
   align-items: flex-start;
   justify-content: center;
   padding: 1rem 1.5rem 1rem 1.5rem;
+  box-shadow: 4px 4px 4px 4px var(--secondary-color) inset;
 }
 .about-title {
   font-size: 2rem;
@@ -354,7 +356,7 @@ body {
   text-transform: uppercase;
 }
 .about-container {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   width: 100%;
   height: 100%;
   display: flex;
@@ -376,7 +378,12 @@ body {
 .row {
   display: grid;
   grid-template-columns: auto auto;
-  gap: 2rem;
+  gap: 1.5rem;
+}
+.location {
+  margin: 2rem;
+  display: flex;
+  align-items: center;
 }
 .details-location {
   font-size: 2rem;
@@ -407,9 +414,11 @@ footer {
 }
 .icon-box {
   display: flex;
+  padding: 2rem;
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  /* border: 2px solid red; */
 }
 .icon-image-box {
   width: 4rem;
@@ -422,6 +431,7 @@ footer {
   display: flex;
   flex-direction: column;
   padding: 2rem;
+  font-size: 1.5rem;
   /* align-items: center;
   justify-content: center; */
   /* gap: 9rem; */
@@ -430,7 +440,6 @@ footer {
   color: var(--background-color);
 }
 .social-image-box p:hover {
-  font-size: 2rem;
   text-decoration: underline #fff;
 }
 .icon-image {
