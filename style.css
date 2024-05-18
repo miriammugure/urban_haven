@@ -75,12 +75,12 @@ body {
 
 /* home styling */
 .home {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   height: 100vh;
-  padding: 4rem;
+  padding-top: 8rem;
   display: flex;
   flex-direction: column;
-  z-index: 99;
+  /* z-index: 99; */
 }
 .home-box {
   gap: 4rem;
@@ -90,7 +90,8 @@ body {
 .home-main-box {
   font-family: var(--secondary-font);
   color: var(--text-color);
-  font-size: 7rem;
+  text-align: center;
+  font-size: 6rem;
   text-transform: capitalize;
   /* border: 2px solid green; */
 }
@@ -120,55 +121,14 @@ body {
 .home-cta:hover {
   transform: scale(1.2);
 }
-/* about styling */
-.about {
-  height: 100vh;
-  padding: 6rem 12rem 0rem 0rem;
-  display: grid;
-  background-color: var(--background-color);
-  grid-template-columns: auto auto;
-  align-items: center;
-  gap: 3rem;
-  z-index: 99;
-  /* border: 2px solid green; */
-}
-.about-description {
-  display: flex;
-  gap: 4rem;
-  flex-direction: column;
-  font-family: var(--primary-font);
-  color: var(--secondary-color);
-  justify-content: center;
-  align-items: center;
-  font-size: 2rem;
-  padding: 1rem 3rem;
-}
-.about-description-title {
-  font-size: 4rem;
-  padding: 1rem 4rem;
-  /* border: 2px solid green; */
-  color: var(--secondary-color);
-  line-height: 3;
-  text-transform: uppercase;
-}
-.about-image {
-  border-radius: 10px;
-  overflow: hidden;
-  /* border: 2px solid blue; */
-}
-/* .about-image-image{
-  width: 100%;
-} */
-.about-image:hover {
-  transform: scale(1.2);
-}
+
 /* amenities section */
 .amenities {
-  /* padding-top: 8rem; */
+  padding-top: 9rem;
   display: flex;
-  z-index: 99;
+  /* z-index: 99; */
   flex-direction: column;
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 .amenities-title {
   padding-top: 2rem;
@@ -217,8 +177,20 @@ body {
 /* apartment section */
 .apartments {
   min-height: 80vh;
+  padding-top: 9rem;
+  display: flex;
+  flex-direction: column;
   /* border: 2px solid black; */
   /* padding: 2rem 2rem; */
+}
+.apartment-title{
+  padding-top: 2rem;
+  text-align: center;
+  color: var(--background-color);
+  text-transform: uppercase;
+  font-size: 3rem;
+  /* border: 2px solid red; */
+  font-family: var(--primary-font);
 }
 .apartment-box {
   display: flex;
@@ -298,6 +270,132 @@ body {
   font-size: 1.5rem;
   text-decoration: underline;
 }
+/* contact styling */
+.contacts{
+  display: grid;
+  grid-template-columns: auto auto;
+  height: 70vh;
+  border: 2px solid red;
+  background-color: var(--primary-color);
+  }
+  .contact-us{
+    border: 2px solid black;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2rem 1.5rem 1rem 1.5rem;
+   
+  }
+  .contact-form{
+  width:40rem ; 
+  display: flex;
+  flex-direction: column;
+  border: solid 2px green;
+    
+  }
+  .text-title{
+   text-transform: capitalize;
+   font-family: var(--primary-font);
+   color: var(--paragrapgh-color);
+   margin-bottom: 1.5rem;
+   border: 2px solid blue;
+  }
+  .form-title{
+    text-transform: capitalize;
+   font-family: var(--primary-font);
+   color: var(--paragrapgh-color);
+   margin-bottom: 1.5rem;
+   border: 2px solid blue;
+  }
+  .contact-form input{
+   width:100%;
+   height: 3rem;
+   margin-bottom: 1.5rem;
+  }
+  .contact-form input:hover{
+    border: 2px solid var(--paragrapgh-color);
+  }
+  .contact-form placeholder{
+    color: var(--paragraph-color);
+
+  }
+  #button{
+    width: 10rem;
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+    font-size: 2rem;
+    font-family: var(--secondary-font);
+    text-transform: capitalize;
+    margin:1rem 2rem 1rem 2rem;
+  }
+  .about-us{
+    display: flex;
+    flex-direction: column;
+  }
+  .about-title{
+    font-size: 2rem;
+    font-family: var(--primary-font);
+    color: var(--paragrapgh-color);
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .about-container{
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
+   
+  }
+  .grid{
+    display: flex;
+   gap: 3rem;
+  }
+  .about-image{
+    width: 10rem;
+    height: 10rem;
+    border: 2px solid green;
+  }
+  .about-image-image{
+    /* border: #06141b solid 2px; */
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    
+     
+  }
+  .about-description{
+    display: flex;
+    flex-direction: column;border: 2px solid black;
+    margin: 2rem;
+    
+  }
+  .location{
+    
+    font-size: 2rem;
+    width: 40rem;
+    text-transform: capitalize;
+    color: var(--paragrapgh-color);
+    font-family: var(--secondary-font);
+  }
+.social-contacts{
+  border: 2px solid green;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: flex-start;
+  text-transform: capitalize;
+  font-size: 2rem;
+  font-family: var(--secondary-font);
+  /* padding: 2rem; */
+}
+.social-contacts a{
+  text-decoration: none;
+  color: var(--paragrapgh-color);
+}
+.social-contacts a:hover{
+  text-decoration: underline;
+  color: var(--background-color);
+}
 /* header responsiveness */
 @media screen and (max-width: 600px) {
   .header-nav-link {
@@ -348,9 +446,9 @@ body {
   /* amenities responsiveness */
   .amenities-box {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    /* justify-content: center;
+    align-items: center; */
   }
 }
 @media screen and (max-width: 900px) and (min-width: 601px) {
