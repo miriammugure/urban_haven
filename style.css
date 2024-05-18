@@ -13,7 +13,7 @@ html {
 body {
   padding: 0;
   margin: 0;
-  /* background-color: var(--primary-color); */
+  background-color: var(--primary-color);
 }
 :root {
   --primary-color: #9ba8ab;
@@ -76,15 +76,16 @@ body {
 /* home styling */
 .home {
   background-color: var(--primary-color);
-  height: 100vh;
+  height: 90vh;
   padding-top: 8rem;
   display: flex;
   flex-direction: column;
+  /* border: 2px solid red; */
   /* z-index: 99; */
 }
 .home-box {
   gap: 4rem;
-  padding: 4rem 2rem;
+  padding: 3rem 2rem;
   /* border:2px solid red ; */
 }
 .home-main-box {
@@ -124,7 +125,8 @@ body {
 
 /* amenities section */
 .amenities {
-  padding-top: 9rem;
+  /* padding-top: 9rem; */
+  padding: 2rem;
   display: flex;
   /* z-index: 99; */
   flex-direction: column;
@@ -140,20 +142,19 @@ body {
   font-family: var(--primary-font);
 }
 .amenities-box {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
+  display: flex;
   flex-wrap: wrap;
-  gap: 3rem;
-  padding: 4rem;
+  gap: 2rem;
+  /* padding: 4rem; */
 }
 .amenities-card-box {
-  width: 15rem;
+  width: 20rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   color: var(--paragrapgh-color);
-  padding: 1rem;
+  padding: 2rem;
 }
 .amenities-card-box:hover {
   border: 2px solid var(--background-color);
@@ -167,10 +168,14 @@ body {
   width: 6rem;
 }
 .amenities-description-text {
-  text-transform: uppercase;
-  /* border: 2px solid blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  font-size: 1.5rem;
 }
 .amenities-card-description {
+  text-transform: capitalize;
   align-items: center;
   font-size: 2rem;
 }
@@ -234,7 +239,7 @@ body {
   font-family: var(--primary-font);
   color: var(--paragrapgh-color);
   font-size: 2rem;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   padding-bottom: 0rem 0rem 2rem 3rem;
 }
 .apartment-sub-text {
@@ -391,8 +396,8 @@ body {
 }
 /* footer styling */
 footer {
-  border: 2px solid green;
-  padding: 2rem;
+  /* border: 2px solid green; */
+  padding: 2rem 0rem 0rem 0rem;
   background-color: var(--primary-color);
 }
 .icons {
@@ -405,11 +410,24 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
 }
 .icon-image-box {
   width: 2rem;
   height: 2rem;
   /* border: 2px solid green; */
+}
+.social-handles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.social-image-box p:hover {
+  font-size: 2rem;
+  text-decoration: underline #fff;
 }
 .icon-image {
   /* border: 2px solid red; */
@@ -417,14 +435,16 @@ footer {
   height: 100%;
   border-radius: 50%;
 }
-.actual-footer p {
+.actual-footer {
   border: 2px solid red;
-  background-color: var(--background-color);
-  color: var(--secondary-color);
-  text-transform: capitalize;
-  font-size: 2rem;
+}
+.footer-text {
+  width: 100%;
   text-align: center;
+  text-transform: uppercase;
+  background-color: var(--paragrapgh-color);
   font-family: var(--primary-font);
+  color: var(--primary-color);
 }
 /* header responsiveness */
 @media screen and (max-width: 600px) {
@@ -447,6 +467,13 @@ footer {
     font-size: 3rem;
   }
   /* homeresponsiveness */
+  .home {
+    padding-top: 15rem;
+  }
+
+  .apartments {
+    padding-top: 16rem;
+  }
   .home-box {
     display: flex;
     flex-direction: column;
@@ -474,12 +501,16 @@ footer {
     transform: none;
   }
   /* amenities responsiveness */
-  .amenities-box {
-    display: flex;
-    flex-wrap: wrap;
-    /* justify-content: center;
-    align-items: center; */
+  .amenities {
+    padding-top: 14rem;
   }
+  /* .amenities-box {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+  /* justify-content: center;
+    align-items: center; 
+  }*/
 }
 @media screen and (max-width: 900px) and (min-width: 601px) {
   .about {
