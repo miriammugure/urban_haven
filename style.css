@@ -528,12 +528,10 @@ footer {
     background-color: var(--primary-color);
   }
   .amenities {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     padding-top: 12rem;
   }
-  .amenities-box {
-    border: 2px solid red;
-  }
+ 
   /* contacts responsiveness */
   .contacts {
     min-height: 100vh;
