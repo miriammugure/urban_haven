@@ -122,18 +122,61 @@ body {
 .home-cta:hover {
   transform: scale(1.2);
 }
-
+/* about section */
+.more-info {
+  min-height: 100vh;
+  /* border: 2px solid red; */
+  padding-top: 13rem;
+}
+.about-title {
+  /* border: 2px solid green; */
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-family: var(--primary-font);
+  color: var(--background-color);
+}
+.more-info-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--primary-color);
+}
+.image-box-about {
+  /* border: #06141b 2px solid; */
+  margin: 3rem;
+  width: 30rem;
+  height: 30rem;
+}
+.image-about-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.description-box-about {
+  width: 30rem;
+  height: 30rem;
+  /* border: 2px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+}
+.description-text-about {
+  font-size: 2rem;
+  font-family: var(--primary-font);
+  color: var(--paragrapgh-color);
+}
 /* amenities section */
 .amenities {
-  /* padding-top: 9rem; */
-  padding: 2rem;
+  padding-top: 9rem;
   display: flex;
   /* z-index: 99; */
   flex-direction: column;
   background-color: var(--primary-color);
 }
 .amenities-title {
-  padding-top: 2rem;
+  /* padding-top: 2rem; */
   text-align: center;
   color: var(--background-color);
   text-transform: uppercase;
@@ -143,9 +186,10 @@ body {
 }
 .amenities-box {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 2rem;
-  /* padding: 4rem; */
+  gap: 5rem;
+  padding: 2rem;
 }
 .amenities-card-box {
   width: 20rem;
@@ -154,7 +198,7 @@ body {
   align-items: center;
   justify-content: center;
   color: var(--paragrapgh-color);
-  padding: 2rem;
+  /* padding: 1.5rem; */
 }
 .amenities-card-box:hover {
   border: 2px solid var(--background-color);
@@ -279,8 +323,8 @@ body {
 .contacts {
   display: flex;
   justify-content: space-around;
-  height: 80vh;
-  padding: 1rem 2rem 1rem 2rem;
+  min-height: 80vh;
+  padding: 9rem 2rem 1rem 2rem;
   /* border: 2px solid red; */
   background-color: var(--primary-color);
 }
@@ -290,7 +334,7 @@ body {
   height: 80%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   padding: 1rem 1.5rem 1rem 1.5rem;
 }
@@ -336,7 +380,6 @@ body {
   text-transform: capitalize;
   margin: 1rem 2rem 1rem 2rem;
 }
-/* about styling */
 
 .details-location {
   /* font-size: 2rem; */
@@ -433,24 +476,21 @@ footer {
   .home-sub-box {
     font-size: 2rem;
   }
+
   /* about responsiveness */
-  .about {
+  .more-info-box {
+    min-height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-  }
-  .about-image {
-    width: 90vw;
-  }
-  .about-image:hover {
-    transform: none;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: var(--primary-color);
   }
   /* amenities responsiveness */
-  /* .amenities {
-    padding-top: 14rem;
-  } */
+
   .amenities-box {
+    min-height: 100vh;
     display: flex;
     gap: 2rem;
     /* border: 2px solid red; */
@@ -476,24 +516,34 @@ footer {
     /* margin-bottom: 1.5rem; */
     border-radius: 8px;
   }
-
-  .about-image {
-    width: 100%;
-    height: 100%;
-  }
 }
 @media screen and (max-width: 900px) and (min-width: 601px) {
-  .about {
+  .more-info-box {
+    min-height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4rem;
+    background-color: var(--primary-color);
+  }
+  .amenities {
+    border: 2px solid black;
+    padding-top: 12rem;
+  }
+  .amenities-box {
+    border: 2px solid red;
   }
   /* contacts responsiveness */
   .contacts {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
-    gap: 2rem;
+  }
+
+  .contact-form input {
+    height: 4rem;
   }
 }
