@@ -388,7 +388,10 @@ body {
   color: var(--secondary-color);
   text-transform: capitalize;
 }
-
+.social-image-box{
+  font-size: 2rem;
+  color: var(--secondary-color);
+}
 .social-contacts a {
   text-decoration: none;
   color: var(--background-color);
