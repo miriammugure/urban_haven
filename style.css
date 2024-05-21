@@ -79,7 +79,7 @@ body {
 /* home styling */
 .home {
   /* background-color: var(--primary-color); */
-  height: 90vh;
+  height: 100vh;
   padding-top: 8rem;
   display: flex;
   flex-direction: column;
@@ -105,6 +105,7 @@ body {
 }
 .home-sub-text{
   font-weight: bold;
+  font-family: var(--primary-font);
   color: var(--para-color);
 }
 .home-sub-box {
@@ -193,59 +194,66 @@ body {
   color: var(--paragrapgh-color);
 }
 /* amenities section */
-.amenities {
+.amenities{
+  min-height: 100vh;
+  /* border: 2px solid #ff0000; */
   padding-top: 9rem;
-  display: flex;
-  /* z-index: 99; */
-  flex-direction: column;
-  /* background-color: var(--primary-color); */
 }
-.amenities-title {
-  /* padding-top: 2rem; */
-  text-align: center;
-  color: var(--background-color);
+.amenities-main-title{
+  font-family: var(--primary-font);
   text-transform: uppercase;
   font-size: 3rem;
-  /* border: 2px solid red; */
-  font-family: var(--primary-font);
+  text-align: center;
+  padding-bottom: 2rem;
+
 }
-.amenities-box {
-  display: flex;
-  justify-content: center;
+.amenities-box{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-evenly;
+  column-gap: 2rem;
+  row-gap: 4rem;
   flex-wrap: wrap;
-  gap: 5rem;
-  padding: 2rem;
+  padding: 1rem;
 }
-.amenities-card-box {
+
+.amenities-card{
   width: 20rem;
+  height: 25rem;
+  /* border: 2px solid red; */
   display: flex;
   flex-direction: column;
+  box-shadow: 4px 8px 4px 8px var(--secondary-color) ;
+  /* justify-content: center; */
   align-items: center;
-  justify-content: center;
-  color: var(--paragrapgh-color);
-  /* padding: 1.5rem; */
+  transition:  .3s ease-in;
 }
-.amenities-card-box:hover {
-  border: 2px solid var(--background-color);
+.amenities-card:hover{
+  margin: -9px;
 }
-/* .amenities-card-image {
-  width: 6rem;
-  border: 2px solid green;
-  border: 2px solid red;
-} */
-.amenities-card-image-image {
-  width: 6rem;
+.card-img{
+ height: 40%;
+ width: 100%;
+ font-size: 4rem;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
 }
-.amenities-description-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.card-details{
+ min-height:60%;
+  padding: 1rem;
+  /* border: 2px solid green; */
+  background-color: #fff;
+  
+}
+.card-title{
+  font-size: 2rem;
+  font-family: var(--primary-font);
   text-transform: capitalize;
-  font-size: 1.5rem;
+  text-align: center;
 }
-.amenities-card-description {
-  text-transform: capitalize;
-  align-items: center;
+.card-description{
   font-size: 2rem;
 }
 /* apartment section */
@@ -268,7 +276,7 @@ body {
 }
 .apartment-box {
   display: flex;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   justify-content: center;
   align-items: center;
   padding: 1rem;
