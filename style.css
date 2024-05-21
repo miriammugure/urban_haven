@@ -13,13 +13,15 @@ html {
 body {
   padding: 0;
   margin: 0;
-  background-color: var(--primary-color);
+  
+  /* background-color: var(--primary-color); */
 }
 :root {
   --primary-color: #9ba8ab;
   --secondary-color: #ccd0cf;
   --background-color: #253745;
   --text-color: #11212d;
+  --para-color:#fff;
   --paragrapgh-color: #06141b;
   --primary-font: "Poppins", Sans-serif;
   --secondary-font: "Dancing Script", cursive;
@@ -75,11 +77,15 @@ body {
 
 /* home styling */
 .home {
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
   height: 90vh;
   padding-top: 8rem;
   display: flex;
   flex-direction: column;
+  background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),url(./Assets/background.webp);
+  background-size: cover;
+ background-position: center;
+  background-repeat: no-repeat;
   /* border: 2px solid red; */
   /* z-index: 99; */
 }
@@ -90,18 +96,23 @@ body {
 }
 .home-main-box {
   font-family: var(--secondary-font);
-  color: var(--text-color);
+  color: var(--para-color);
   text-align: center;
   font-size: 6rem;
   text-transform: capitalize;
   /* border: 2px solid green; */
 }
+.home-sub-text{
+  font-weight: bold;
+  color: var(--para-color);
+}
 .home-sub-box {
   /* border: 2px solid black; */
   text-align: center;
   font-size: 3rem;
+  /* font-weight: bold; */
   font-family: var(--primary-font);
-  color: var(--text-color);
+  color: var(--para-color);
   text-transform: uppercase;
 }
 .home-box-cta {
@@ -114,6 +125,7 @@ body {
 .home-cta {
   font-size: 2rem;
   text-decoration: none;
+  text-transform: capitalize;
   color: var(--secondary-color);
   padding: 2rem;
   border-radius: 10px;
@@ -140,7 +152,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
 }
 .image-box-about {
   /* border: #06141b 2px solid; */
@@ -173,7 +185,7 @@ body {
   display: flex;
   /* z-index: 99; */
   flex-direction: column;
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
 }
 .amenities-title {
   /* padding-top: 2rem; */
@@ -249,7 +261,7 @@ body {
   padding: 1rem;
   flex-wrap: wrap;
   /* border: 2px solid red; */
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
 }
 .apartment-card-box {
   display: flex;
@@ -326,7 +338,7 @@ body {
   min-height: 80vh;
   padding: 9rem 2rem 1rem 2rem;
   /* border: 2px solid red; */
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
 }
 .contact-us {
   border: 2px solid black;
@@ -503,9 +515,7 @@ footer {
   .amenities-box {
     min-height: 100vh;
     display: flex;
-    gap: 2rem;
-    /* border: 2px solid red; */
-    /* flex-direction: column; */
+    gap: 2rem; 
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
