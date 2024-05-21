@@ -64,6 +64,7 @@ body {
 }
 
 .header-nav-link a {
+  font-family: var(--primary-font);
   color: var(--secondary-color);
   text-decoration: none;
   text-transform: capitalize;
@@ -157,17 +158,29 @@ body {
 .image-box-about {
   /* border: #06141b 2px solid; */
   margin: 3rem;
-  width: 30rem;
-  height: 30rem;
+  width: 60rem;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  /* height: 50rem; */
 }
 .image-about-image {
+  /* object-fit: cover;
+  object-position: center; */
   width: 100%;
   height: 100%;
   border-radius: 10px;
+  transition: transform 2s ease;
+  
+ 
 }
+.image-about-image:hover{
+  transform: scale(1.2);
+}
+
 .description-box-about {
-  width: 30rem;
-  height: 30rem;
+  width: 40rem;
+  /* height: 30rem; */
   /* border: 2px solid black; */
   display: flex;
   align-items: center;
