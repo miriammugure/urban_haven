@@ -13,7 +13,7 @@ html {
 body {
   padding: 0;
   margin: 0;
-  
+
   /* background-color: var(--primary-color); */
 }
 :root {
@@ -21,7 +21,7 @@ body {
   --secondary-color: #ccd0cf;
   --background-color: #253745;
   --text-color: #11212d;
-  --para-color:#fff;
+  --para-color: #fff;
   --paragrapgh-color: #06141b;
   --primary-font: "Poppins", Sans-serif;
   --secondary-font: "Dancing Script", cursive;
@@ -83,9 +83,10 @@ body {
   padding-top: 8rem;
   display: flex;
   flex-direction: column;
-  background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),url(./Assets/background.webp);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
+    url(./Assets/background.webp);
   background-size: cover;
- background-position: center;
+  background-position: center;
   background-repeat: no-repeat;
   /* border: 2px solid red; */
   /* z-index: 99; */
@@ -103,7 +104,7 @@ body {
   text-transform: capitalize;
   /* border: 2px solid green; */
 }
-.home-sub-text{
+.home-sub-text {
   font-weight: bold;
   font-family: var(--primary-font);
   color: var(--para-color);
@@ -172,10 +173,8 @@ body {
   height: 100%;
   border-radius: 10px;
   transition: transform 2s ease;
-  
- 
 }
-.image-about-image:hover{
+.image-about-image:hover {
   transform: scale(1.2);
 }
 
@@ -194,20 +193,19 @@ body {
   color: var(--paragrapgh-color);
 }
 /* amenities section */
-.amenities{
+.amenities {
   min-height: 100vh;
   /* border: 2px solid #ff0000; */
   padding-top: 9rem;
 }
-.amenities-main-title{
+.amenities-main-title {
   font-family: var(--primary-font);
   text-transform: uppercase;
   font-size: 3rem;
   text-align: center;
   padding-bottom: 2rem;
-
 }
-.amenities-box{
+.amenities-box {
   display: grid;
   grid-template-columns: auto auto auto auto;
   justify-content: space-evenly;
@@ -217,43 +215,41 @@ body {
   padding: 1rem;
 }
 
-.amenities-card{
+.amenities-card {
   width: 20rem;
   height: 25rem;
   /* border: 2px solid red; */
   display: flex;
   flex-direction: column;
-  box-shadow: 4px 8px 4px 8px var(--secondary-color) ;
+  box-shadow: 4px 8px 4px 8px var(--secondary-color);
   /* justify-content: center; */
   align-items: center;
-  transition:  .3s ease-in;
+  transition: 0.3s ease-in;
 }
-.amenities-card:hover{
+.amenities-card:hover {
   margin: -9px;
 }
-.card-img{
- height: 40%;
- width: 100%;
- font-size: 4rem;
- display: flex;
- justify-content: center;
- align-items: center;
-
+.card-img {
+  height: 40%;
+  width: 100%;
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.card-details{
- min-height:60%;
+.card-details {
+  min-height: 60%;
   padding: 1rem;
   /* border: 2px solid green; */
   background-color: #fff;
-  
 }
-.card-title{
+.card-title {
   font-size: 2rem;
   font-family: var(--primary-font);
   text-transform: capitalize;
   text-align: center;
 }
-.card-description{
+.card-description {
   font-size: 2rem;
 }
 /* apartment section */
@@ -421,7 +417,7 @@ body {
   color: var(--secondary-color);
   text-transform: capitalize;
 }
-.social-image-box{
+.social-image-box {
   font-size: 2rem;
   color: var(--secondary-color);
 }
@@ -458,7 +454,6 @@ footer {
   width: 4rem;
   height: 4rem;
   /* background-color: var(--secondary-color); */
-  
 }
 
 .icon-image {
@@ -536,7 +531,7 @@ footer {
   .amenities-box {
     min-height: 100vh;
     display: flex;
-    gap: 2rem; 
+    gap: 2rem;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -573,7 +568,7 @@ footer {
     /* border: 2px solid black; */
     padding-top: 12rem;
   }
- 
+
   /* contacts responsiveness */
   .contacts {
     min-height: 100vh;
