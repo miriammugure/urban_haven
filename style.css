@@ -501,6 +501,7 @@ footer {
   /* homeresponsiveness */
   .home {
     padding-top: 15rem;
+   min-width:100%;
   }
 
   .apartments {
@@ -525,6 +526,7 @@ footer {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 2rem 1rem 2rem 1rem ;
     gap: 2rem;
     background-color: var(--primary-color);
   }
