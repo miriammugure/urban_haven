@@ -494,7 +494,7 @@ footer {
   color: var(--para-color);
 }
 /* header responsiveness */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
   .header-nav-link {
     display: flex;
   }
@@ -586,7 +586,7 @@ footer {
     border-radius: 8px;
   }
 }
-@media screen and (max-width: 900px) and (min-width: 721px) {
+@media screen and (max-width: 900px) and (min-width: 601px) {
   .more-info-box {
     min-height: 100vh;
     display: flex;
