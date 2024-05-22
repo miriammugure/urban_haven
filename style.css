@@ -504,7 +504,7 @@ footer {
   /* homeresponsiveness */
   .home {
     padding-top: 15rem;
-   width: 80vh;
+   /* width: 80vh; */
   }
 
   .apartments {
@@ -532,6 +532,9 @@ footer {
     margin: 2rem 1rem 2rem 1rem ;
     gap: 2rem;
     background-color: var(--primary-color);
+  }
+  .image-about-image{
+    width: 50%;
   }
   /* amenities responsiveness */
 
