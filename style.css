@@ -137,6 +137,7 @@ body {
   background-color: var(--background-color);
 }
 .home-cta:hover {
+  transition: all 1s ease;
   transform: scale(1.2);
 }
 /* about section */
@@ -229,11 +230,12 @@ body {
   box-shadow: 4px 8px 4px 8px var(--secondary-color) ;
   /* justify-content: center; */
   align-items: center;
-  transition:  .3s ease-in;
+ 
 }
-/* .amenities-card:hover{
+.amenities-card:hover{
+  transition: all 1s ease;
   margin: -9px;
-} */
+}
 .card-img{
  height: 40%;
  width: 100%;
@@ -352,7 +354,8 @@ body {
   border-radius: 10px;
 }
 .apartment-cta:hover {
-  font-size: 1.5rem;
+  transition: all 1s ease;
+  font-size: 1.2rem;
   text-decoration: underline;
 }
 /* contact styling */
@@ -389,11 +392,13 @@ body {
   font-family: var(--primary-font);
   color: var(--paragrapgh-color);
   margin-bottom: 1.5rem;
+  font-size: 3rem;
   /* border: 2px solid blue; */
 }
 .contact-form input {
   width: 100%;
-  height: 3rem;
+  padding: 2rem;
+  height: 4rem;
   margin-bottom: 1.5rem;
   border-radius: 8px;
 }
@@ -403,18 +408,28 @@ body {
 .contact-form textarea {
   max-height: 20rem;
   max-width: 30rem;
+  padding: 2rem;
 }
 .contact-form placeholder {
   color: var(--paragraph-color);
 }
 #button {
+ 
+ padding: 1rem 1.5rem;
+ border-radius: 5px;
   width: 10rem;
-  background-color: var(--secondary-color);
+  background-color: var(--para-color);
   color: var(--background-color);
-  font-size: 2rem;
-  font-family: var(--secondary-font);
+  /* font-size: 2rem; */
+  font-family: var(--primary-font);
   text-transform: capitalize;
   margin: 1rem 2rem 1rem 2rem;
+
+}
+#button:hover{
+  transition: all 1s ease;
+  background-color: #000;
+  color: var(--para-color);
 }
 
 .details-location {
