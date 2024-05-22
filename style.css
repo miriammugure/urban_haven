@@ -293,9 +293,12 @@ body {
   display: flex;
   margin: 2rem;
   flex-direction: column;
+  
   /* border: 2px solid green; */
 }
 .apartment-card-box:hover {
+  transition: all 1s ease-in;
+  background-color: #ccd0cf;
   border: 2px solid var(--paragrapgh-color);
 }
 .apartment-image-box {
