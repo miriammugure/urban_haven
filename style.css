@@ -84,6 +84,8 @@ body {
   padding-top: 8rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-image:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.9)),url(./Assets/background.webp);
   background-size: cover;
  background-position: center;
@@ -527,7 +529,7 @@ footer {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 2rem 1rem 2rem 1rem ;
+    margin: 2rem 1rem 2rem 1rem ;
     gap: 2rem;
     background-color: var(--primary-color);
   }
