@@ -504,12 +504,11 @@ footer {
   /* homeresponsiveness */
   .home {
     padding-top: 15rem;
-   width: 80vh;
+   /* width: 80vh; */
   }
 
   .apartments {
     padding-top: 16rem;
-    width: 80vh;
   }
   .home-box {
     display: flex;
@@ -526,7 +525,6 @@ footer {
   /* about responsiveness */
   .more-info-box {
     min-height: 100vh;
-    width: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -546,7 +544,6 @@ footer {
 
   .amenities-box {
     min-height: 100vh;
-    width: 80vh;
     display: flex;
     gap: 1rem; 
     flex-wrap: wrap;
@@ -563,7 +560,6 @@ footer {
     align-items: center;
     flex-direction: column;
     gap: 2rem;
-    width: 80vh;
   }
   .contact-form input {
     width: 80%;
