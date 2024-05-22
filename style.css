@@ -232,10 +232,10 @@ body {
   align-items: center;
  
 }
-.amenities-card:hover{
+/* .amenities-card:hover{
   transition: all 1s ease;
   margin: -9px;
-}
+} */
 .card-img{
  height: 40%;
  width: 100%;
@@ -494,7 +494,7 @@ footer {
   color: var(--para-color);
 }
 /* header responsiveness */
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 800px) {
   .header-nav-link {
     display: flex;
   }
