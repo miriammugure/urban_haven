@@ -33,6 +33,7 @@ body {
   display: flex;
   justify-content: space-around;
   background-color: var(--background-color);
+
 }
 .header-logo-wrapper {
   padding: 1rem 2rem;
@@ -76,6 +77,22 @@ body {
   text-decoration: underline;
 }
 
+.harmburger{
+  cursor: pointer;
+  display: none;
+ 
+  /* background-color: white;
+   color: var(--para-color);
+   height: 3px; */
+}
+.bars {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: var(--para-color);
+  margin: 5px 0;
+}
+
 /* home styling */
 .home {
   /* background-color: var(--primary-color); */
@@ -83,7 +100,7 @@ body {
   padding-top: 8rem;
   display: flex;
   flex-direction: column;
-  background-image:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.9)),url(./Assets/background.webp);
+  background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)),url(./Assets/background.webp);
   background-size: cover;
  background-position: center;
   background-repeat: no-repeat;
@@ -474,13 +491,10 @@ footer {
 }
 /* header responsiveness */
 @media screen and (max-width: 600px) {
-  .header-nav-link {
+  /* .header-nav-link {
     display: flex;
-  }
-  .header {
-    display: flex;
-    flex-direction: column;
-  }
+  }*/
+  
 
   .header-logo-wrapper {
     display: flex;
@@ -492,11 +506,41 @@ footer {
     text-align: center;
     font-size: 3rem;
   }
+  .harmburger{
+    display: block;
+    /* background-color: white; */
+    color: var(--para-color);
+  }
+  .harmburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  .harmburger.active .bar:nth-child(1){
+   transform: translateY(8px) rotate(45deg);
+  }
+  .harmburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+   }
+/* ol{
+  background-color: #fff;
+  color: #000;
+} */
   .header-nav-list {
-    list-style: none;
-    gap: 1rem;
-    display: flex;
-    padding: 1rem;
+    position:fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color:var(--background-color);
+    text-align: center;
+    transition: .3s ;
+    
+  }
+  .header-nav-link{
+    margin: 16px;
+   
+  }
+  .header-nav-list.active{
+ left:  0;
   }
   /* homeresponsiveness */
   .home {
