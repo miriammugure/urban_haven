@@ -101,13 +101,7 @@ body {
   padding-top: 8rem;
   display: flex;
   flex-direction: column;
-<<<<<<< HEAD
-  align-items: center;
-  justify-content: center;
-  background-image:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.9)),url(./Assets/background.webp);
-=======
   background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)),url(./Assets/background.webp);
->>>>>>> branch1
   background-size: cover;
  background-position: center;
   background-repeat: no-repeat;
