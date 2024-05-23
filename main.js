@@ -33,7 +33,7 @@
 //   harmbuger.classList.remove("active");
 //   header_navlist.classList.remove("active");
 // }))
-const harmbuger = document.querySelector(".harmburger");
+const harmbuger = document.querySelector( ".harmburger");
 const header_navlist = document.querySelector(".header-nav-list");
 
 harmbuger.addEventListener("click", () => {
